@@ -1,0 +1,16 @@
+USE registration_db;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  student_name VARCHAR(255) NOT NULL,
+  father_name VARCHAR(255) NOT NULL,
+  mother_name VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  date_of_birth DATE NOT NULL,
+  address TEXT,
+  blood_group VARCHAR(10),
+  department VARCHAR(255),
+  course VARCHAR(255),
+  password VARCHAR(255) NOT NULL
+);
